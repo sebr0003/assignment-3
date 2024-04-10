@@ -10,7 +10,12 @@ header {
 
 img {
     width: 100%;
-    margin: 1.4;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
 }
 
 .wrapper {
@@ -20,16 +25,14 @@ img {
 
 header .wrapper {
     display: flex;
-    max-width: 940px;
     align-items: center;
     justify-content: space-between;
     color: #fff;
 }
 
-span {
-    display: flex;
+header span {
+    font-size: 30px;
     justify-content: left;
-    color: #fff;
 }
     
 header nav ul{
@@ -49,21 +52,19 @@ nav ul li a:link {
 body {
     margin: 0;
     background-color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.4;
 }
 
 #hero {
     height: 600px;
-    background-image:url(../images/hands-typing.jpg);
+    background-image: url(../images/hands-typing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     filter: grayscale(70%);
-
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 h1 {
@@ -72,131 +73,76 @@ h1 {
     color: #fff;
     font-size: 3rem;
     text-shadow: 2px 2px 6px #000;
-    text-align: center;
     padding: 20px;
 }
 
-#about-me {
+#about-me .wrapper {
     display: flex;
-    max-width: 940px;
-    justify-content: center;
-    align-items: center;
-
 }
 
-.about-me-wrapper {
-    max-width: 940px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
+#about-me h2 {
+    font-size: 40px;
 }
 
-.about-me-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0;
+.about-me-1{
     margin: 0 auto;
 }
 
 .about-me-img {
-    margin: 100px 0 0 100px;
-    padding: 0;
-    border: 0;
-    width: 30%;
-    height: 10%;
+    width: 33%;
 }
 
 
 #services {
-    background-color: #fafafa;
-    padding: 2em;
     display: flex;
+    background-color: #fafafa;
+    padding: 2em 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 0;
+    margin: 0 auto;
 }
 
-/* #services .wrapper {
+#services .wrapper {
     max-width: 940px;
     background-color: #fafafa;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     gap: 40px;
     margin: 0 auto;
     padding: 1em;
-} */
+}
 
 #services h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 40pt;
 }
 
 #services .article-list {
     display: grid;
-    flex-direction: row;
     gap: 50px;
-    max-width: 940px;
     background-color: #fafafa;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 0;
 }
 
-/* .service-1 {
-    border: 10px;
-    padding: 0 20px 80px 20px;
+#service article {
+    display: flex;
     flex-direction: column;
+    padding: 1rem;
+    padding-top: 0;
 }
 
-.service-2 {
-    background-color: white;
-    padding: 0 20px 20px 20px;
-}
-
-.service-3 {
-    background-color: white;
-    padding: 0 20px 20px 20px;
-} */
-
-#services a:link,
-#services a:visited {
+#service article a {
     display: inline-block;
-    padding: .8em 1em;
+    padding: 10px 15px;
     background-color: #000;
     color: #fff;
     text-decoration: none;
-    border: 2px solid #000;
     border-radius: 4px;
-    margin-top: auto ;
+    margin-top: auto;
+    align-self: start;
 }
 
-#services section {
-background-color: grey;
-padding: 2em 0;
-}
-
-.wrapper {
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: 1fr 1fr 1fr;
-
-    gap: 40px;
-}
-    
-.wrapper article h3 {
-    max-width: 600px;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.wrapper article p {
-    padding-bottom: 2em;
-}
 
 .wrapper a:link,
 .wrapper a:visited {
@@ -212,28 +158,19 @@ padding: 2em 0;
 
 }
 
-.wrapper a:hover,
-.wrapper a:focus {
-  background-color: #fff;
-  color: grey;
-}
-
 
 #work .wrapper{
     max-width: 940px;
     text-align: center;
 }
 
-#work h2,
 #work p{
-    max-width: 0 auto;
     text-align: center;
-    max-width: 600px;
-    padding-bottom: 20px;
+    padding: 0 130px;
 }
 
 #work h2{
-    padding-top: 40px;
+    text-align: center;
 }
 
 .gallery{

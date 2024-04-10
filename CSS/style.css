@@ -104,7 +104,6 @@ h1 {
 }
 
 #services .wrapper {
-    max-width: 940px;
     background-color: #fafafa;
     display: grid;
     gap: 40px;
